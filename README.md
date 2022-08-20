@@ -17,8 +17,7 @@ optional arguments:
                         
 # :bomb: Updates.
 1: Posted
-# :rocket: 
-compiling to a txt at 15 stars!
+# :rocket: compiling to a exe at 15 stars!
  # :rocket: Contact info
  
  Tweet at me https://twitter.com/Sentinelzzzz
