@@ -16,8 +16,9 @@ optional arguments:
                         Changes method
                         
 # :bomb: Updates.
-1: Posted \n
-:rocket: compiling to a txt at 15 stars!
+1: Posted
+# :rocket: 
+compiling to a txt at 15 stars!
  # :rocket: Contact info
  
  Tweet at me https://twitter.com/Sentinelzzzz
