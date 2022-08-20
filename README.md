@@ -1,5 +1,5 @@
 # :bomb: GoSniper
-
+GoSniper is a hacking tool strictly for pentesting purpouses and ethical hacking. Me Sphinx have no reliability on what you do with the tool. Everything you do is on you
 
 # :bomb: Usage
 
@@ -17,3 +17,8 @@ optional arguments:
                         
 # :bomb: Updates.
 1: Posted
+ # :rocket: Contact info
+ 
+ Tweet at me https://twitter.com/Sentinelzzzz
+ 
+ Dm me on discord Not-Sphinx#0001
