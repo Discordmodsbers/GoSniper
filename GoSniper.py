@@ -2,6 +2,9 @@ import socket
 import threading
 import argparse
 import os
+import webbrowser
+import requests
+
 os.system('clear')
 # Initialize parser
 parser = argparse.ArgumentParser()
@@ -19,6 +22,24 @@ Port = int(args.Port)
 Fakeip = (args.Fakeip)
 attack_num = 0
 
+
+#How we update
+
+def update():
+    time.sleep(3)
+    webbrowser.open('https://pynxtech.tk/gosniper/')
+
+def checkver():
+    content = open("ver.txt",r) 
+    ver = content.read()
+
+def comparever():
+    latver = requests.get("https://pynxtech.tk/gosniper/latver.txt")
+    latver = latver.text
+    if letver != ver:
+        print("Updating now. We are sending you the updated url download")
+        time.sleep(3)
+        update()   
 
 class bcolors:
     HEADER = '\033[95m'
