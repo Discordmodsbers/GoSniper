@@ -17,6 +17,7 @@ optional arguments:
                         
 # :bomb: Updates.
 1: Posted
+2: Update system & Version txt
 # :rocket: compiling to a exe at 15 stars!
  # :rocket: Contact info
  
