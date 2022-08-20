@@ -17,6 +17,7 @@ optional arguments:
                         
 # :bomb: Updates.
 1: Posted
+:linux: compiling to a txt at 15 stars!
  # :rocket: Contact info
  
  Tweet at me https://twitter.com/Sentinelzzzz
