@@ -3,7 +3,7 @@ GoSniper is a hacking tool strictly for pentesting purpouses and ethical hacking
 
 # :bomb: Usage
 
-usage: DoS.py [-h] [-T TARGET] [-p PORT] [-F FAKEIP] [-M METHOD]
+usage: GoSniper.py [-h] [-T TARGET] [-p PORT] [-F FAKEIP] [-M METHOD]
 
 optional arguments:
   -h, --help            show this help message and exit
