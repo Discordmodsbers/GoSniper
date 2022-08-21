@@ -1,3 +1,5 @@
+![ ALT](icon.png)
+
 # :bomb: GoSniper
 GoSniper is a hacking tool strictly for pentesting purpouses and ethical hacking. Me Sphinx have no reliability on what you do with the tool. Everything you do is on you
 
